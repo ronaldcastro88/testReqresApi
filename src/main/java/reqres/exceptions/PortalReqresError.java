@@ -1,7 +1,7 @@
 package reqres.exceptions;
 
 public class PortalReqresError extends AssertionError {
-    public static final String STATUS_NO_OBTENIDO = "El usuario no obtuvo el status esperado";
+    public static final String STATUS_NO_OBTENIDO = "El usuario no obtuvo el status esperado o los datos correctos";
 
     public PortalReqresError(String message) {
         super(message);
