@@ -3,19 +3,19 @@ package reqres.tasks;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
-import net.serenitybdd.screenplay.rest.interactions.Get;
+import net.serenitybdd.screenplay.rest.interactions.Delete;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static reqres.utils.constants.paths.USERS;
 
-public class ConsultarUsuario implements Task {
+public class EliminaElUsuario implements Task {
 
-    public static Performable paraDatosBasicos() {
-        return instrumented(ConsultarUsuario.class);
+    public static Performable delSistema() {
+        return instrumented(EliminaElUsuario.class);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Get.resource(USERS.getPath()));
+        actor.attemptsTo(Delete.from(USERS.getPath()));
     }
 }

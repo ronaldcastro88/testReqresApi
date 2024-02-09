@@ -24,7 +24,6 @@ public class CrearUsuarioStepDefinitions {
 
     @Cuando("^el envia los datos de creacion$")
     public void elEnviaLosDatosDeCreacion() {
-
         String datosBasicos = "{\"email\":\"eve.holt@reqres.in\",\"password\":\"pistol\"}";
         theActorInTheSpotlight().attemptsTo(RegistrarUsuario.ConLosDatos(datosBasicos));
     }
