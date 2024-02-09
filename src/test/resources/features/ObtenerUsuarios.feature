@@ -1,5 +1,8 @@
 # language: es
 Característica: Consultar los usuarios creados en el sitio
+  Yo como flujo de consulta
+  quiero validar que permita retornar la información del usuario
+  para que exponga todos los datos
 
   @ObtenerListadoUsuarios
   Escenario: Consulta el listado de usuario que están creados en el sitio

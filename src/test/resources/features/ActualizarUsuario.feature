@@ -1,5 +1,9 @@
 # language: es
-Característica: Creación exitosa de un usuario
+Característica: Actualización exitosa de un usuario
+  Yo como flujo de actualización
+  quiero validar que permita reemplazar la información
+  para retornar los nuevos datos básicos
+
 
   @ActualizacionExitosaUsuario
   Escenario: Actualización exitosa
