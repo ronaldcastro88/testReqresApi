@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Consultar los usuarios creados en el sitio" skipped="0" tests="3" time="1.54" timestamp="2024-02-08 07:15:17"><testcase name="Consulta el listado de usuario que están creados en el sitio"/><testcase name="Consultar usuario único"/><testcase name="Consultar un usuario que no existe"/></testsuite>
