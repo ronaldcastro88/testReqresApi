@@ -1,0 +1,7 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Actualización exitosa de un usuario","Actualización exitosa","SUCCESS","2024-02-08T22:00:10.31802-05:00[America/Bogota]","0.0","3.59"
+"Creación exitosa de un usuario","Creación exitosa","SUCCESS","2024-02-08T22:00:14.694533-05:00[America/Bogota]","0.0","0.61"
+"Eliminación exitosa de un usuario","Eliminación exitosa de un usuario","SUCCESS","2024-02-08T22:00:15.342163-05:00[America/Bogota]","0.0","0.59"
+"Consultar los usuarios creados en el sitio","Consulta el listado de usuario que están creados en el sitio","SUCCESS","2024-02-08T22:00:16.000254-05:00[America/Bogota]","0.0","0.33"
+"Consultar los usuarios creados en el sitio","Consultar usuario único","SUCCESS","2024-02-08T22:00:16.335548-05:00[America/Bogota]","0.0","0.63"
+"Consultar los usuarios creados en el sitio","Consultar un usuario que no existe","SUCCESS","2024-02-08T22:00:16.969636-05:00[America/Bogota]","0.0","0.58"
