@@ -11,12 +11,10 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class Hooks {
 
-    private String urlBase;
-
     @Before
     public void setTheStage() {
         OnStage.setTheStage(new OnlineCast());
-        urlBase = SitioTest.URLBASEAPI.getUrl();
+        String urlBase = SitioTest.URLBASEAPI.getUrl();
         theActorCalled("actor");
         theActorInTheSpotlight().whoCan(CallAnApi.at(urlBase));
     }
