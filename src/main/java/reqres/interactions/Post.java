@@ -15,7 +15,7 @@ public class Post extends RestInteraction {
         this.resource = resource;
     }
 
-    @Step("{0} ejecuta un post al endpoint #resource")
+    @Step("Se ejecuta un post al endpoint #resource")
     @Override
     public <T extends Actor> void performAs(T actor) {
         rest().log().all().post(as(actor).resolve(resource)).then().log().all();

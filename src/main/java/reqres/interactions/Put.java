@@ -15,7 +15,7 @@ public class Put extends RestInteraction {
         this.resource = resource;
     }
 
-    @Step("{0} ejecuta un put al endpoint #resource")
+    @Step("Se ejecuta un put al endpoint #resource")
     @Override
     public <T extends Actor> void performAs(T actor) {
         rest().log().all().put(as(actor).resolve(resource)).then().log().all();
