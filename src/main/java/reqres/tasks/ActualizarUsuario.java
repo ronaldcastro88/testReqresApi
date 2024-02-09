@@ -7,7 +7,7 @@ import net.serenitybdd.screenplay.Task;
 import reqres.interactions.Put;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static reqres.utils.constants.paths.USERS;
+import static reqres.utils.constants.paths.USUARIOS;
 
 public class ActualizarUsuario implements Task {
 
@@ -24,7 +24,7 @@ public class ActualizarUsuario implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Put.to(USERS.getPath()).with(
+                Put.to(USUARIOS.getPath()).with(
                         requestSpecification -> requestSpecification
                                 .contentType(ContentType.JSON)
                                 .body(datosUsuario)

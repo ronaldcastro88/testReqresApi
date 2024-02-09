@@ -1,7 +1,8 @@
 package reqres.utils.constants;
 
 public enum paths {
-    USERS("users/2");
+    USUARIOS("users/2"),
+    REGISTRO("register");
 
     private String path;
 

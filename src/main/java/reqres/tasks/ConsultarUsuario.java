@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.rest.interactions.Get;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static reqres.utils.constants.paths.USERS;
+import static reqres.utils.constants.paths.USUARIOS;
 
 public class ConsultarUsuario implements Task {
 
@@ -16,6 +16,6 @@ public class ConsultarUsuario implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Get.resource(USERS.getPath()));
+        actor.attemptsTo(Get.resource(USUARIOS.getPath()));
     }
 }

@@ -7,6 +7,7 @@ import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
+import static reqres.utils.constants.paths.REGISTRO;
 
 public class RegistrarUsuario implements Task {
 
@@ -23,7 +24,7 @@ public class RegistrarUsuario implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Post.to("register").with(
+                Post.to(REGISTRO.getPath()).with(
                         requestSpecification -> requestSpecification
                                 .contentType(ContentType.JSON)
                                 .body(datosUsuario)

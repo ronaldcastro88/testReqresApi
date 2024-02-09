@@ -6,7 +6,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.rest.interactions.Delete;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
-import static reqres.utils.constants.paths.USERS;
+import static reqres.utils.constants.paths.USUARIOS;
 
 public class EliminaElUsuario implements Task {
 
@@ -16,6 +16,6 @@ public class EliminaElUsuario implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Delete.from(USERS.getPath()));
+        actor.attemptsTo(Delete.from(USUARIOS.getPath()));
     }
 }
