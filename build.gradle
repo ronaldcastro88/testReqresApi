@@ -9,9 +9,10 @@ buildscript {
 
 plugins {
     id 'java'
-    id "net.serenity-bdd.serenity-gradle-plugin" version "4.0.46"
     id 'idea'
 }
+
+apply plugin: 'net.serenity-bdd.aggregator'
 
 group = 'reqres'
 version = '1.0-SNAPSHOT'
@@ -37,15 +38,15 @@ dependencies {
     implementation "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
     testImplementation "org.hamcrest:hamcrest-core:2.2"
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.slf4j:slf4j-simple:2.0.12'
 }
 
-tasks.withType(JavaCompile) {
+tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
 
-tasks.withType(Test) {
+tasks.withType(Test).configureEach {
     systemProperty "file.encoding", "UTF-8"
     maxParallelForks = 1
 }

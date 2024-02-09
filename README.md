@@ -7,7 +7,7 @@ prueba, Java como lenguaje y Serenity Rest para probar la API del sitio [REQRES]
 ---  
 
 Requisito para ejecutar **[JDK 11.0.11](https://www.oracle.com/co/java/technologies/javase-jdk11-downloads.html)**
-y  **[gradle 5.2.1](https://gradle.org/install/)** o superior.
+y **[gradle 5.2.1](https://gradle.org/install/)** o superior.
 
 #### Ejemplo comando de ejecución:
 
@@ -15,11 +15,11 @@ Para ejecutar un runner específico:
 ```   gradlew clean test -Prunner="ObtenerUsuariosRunner" aggregate --info ``` en Ubuntu como es mi caso ```./gradlew clean test...```
 
 Para ejecutar toda la batería de pruebas:
-```   gradlew clean test  aggregate  ```
+```   gradlew clean test  aggregate  ``` en Ubuntu como es mi caso ```./gradlew clean test  aggregate```
 ---  
 ## Ejecución de pruebas
 
-Para ejecutar por medio del IDE basta con dar click derecho sobre cada runner y hacer click sobre Run (nombre del archivo)
+Para ejecutar por medio del IDE basta con dar clic derecho sobre cada runner y hacer clic sobre Run (nombre del archivo)
 como se muestra en la imagen a continuación
 ![img.png](img.png)
 
