@@ -20,7 +20,7 @@ public class ActualizarUsuarioStepDefinitions {
     public void debeVerElStatusConLosDatosNuevosDelUsuario(int status) {
         theActorInTheSpotlight().should(seeThatResponse("El código de respuesta es 200",
                 response -> {
-                    response.statusCode(200)
+                    response.statusCode(status)
                             .body("name", equalTo("morpheus"))
                             .body("job", equalTo("zion resident"));
                     response.log().all();

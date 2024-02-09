@@ -4,7 +4,6 @@ import io.restassured.http.ContentType;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
-import reqres.interactions.Post;
 import reqres.interactions.Put;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
